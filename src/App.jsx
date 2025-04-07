@@ -5,6 +5,7 @@ import Functional from './components/Functional'
 import Data from './components/Data'
 import State from './components/State'
 import Func from './components/Func'
+import Apicall from './components/Apicall'
 
 const App = () => {
   const obj={
@@ -14,7 +15,7 @@ const App = () => {
 
   }
 
-  const [condition,setCondition]=useState(false)
+  const [condition,setCondition]=useState(true)
 
   const ar=[45,63,85]
   return (
@@ -23,6 +24,8 @@ const App = () => {
       {
         condition?<State/>:<Func/>
       }
+
+      <Apicall/>
       {/* <Demo/> */}
       {/* <h1>App</h1>
       <Functional name={'Anjali yadav'} data={obj} arr={ar}/>

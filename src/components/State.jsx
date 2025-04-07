@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 
 
 // use state hook
@@ -8,6 +8,23 @@ const State = () => {
     const [age,setAge]=useState(23);
     const [color,setColor]=useState('white')
     const [bgcolor,setBgColor]=useState('blue')
+//1 calls on  every change 
+    // useEffect(()=>{
+    //  console.log("use effect called");
+    // })
+
+    //2 called first time and on every render
+
+    // useEffect(()=>{
+    //     console.log("use effect called");
+    //    },[])
+
+    //3 called on state change only
+
+    useEffect(()=>{
+        console.log("use effect called");
+       },[count,color,name])
+
     const condition=false;
 
     const changeColor=()=>{
