@@ -21,9 +21,9 @@ const App = () => {
   return (
     <div>
       {/* <State/> */}
-      {
+      {/* {
         condition?<State/>:<Func/>
-      }
+      } */}
 
       <Apicall/>
       {/* <Demo/> */}
