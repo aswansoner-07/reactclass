@@ -10,10 +10,11 @@ const Apicall = () => {
         .then((apidata)=>setData(apidata))
         .catch((err)=>{
             console.log(err)
-        })
+        });
+     
+        // document.title="Product List" 
     },[]);
 
-    console.log(data)
   return (
     <div>
         <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2'>

@@ -6,6 +6,10 @@ import Data from './components/Data'
 import State from './components/State'
 import Func from './components/Func'
 import Apicall from './components/Apicall'
+import Layout from './components/Layout'
+import RefHook from './components/RefHook'
+import ContactForm from './components/ContactForm'
+import AnotherForm from './components/AnotherForm'
 
 const App = () => {
   const obj={
@@ -24,8 +28,11 @@ const App = () => {
       {/* {
         condition?<State/>:<Func/>
       } */}
-
-      <Apicall/>
+{/* <Layout/> */}
+{/* <ContactForm/> */}
+<AnotherForm/>
+      {/* <Apicall/> */}
+      {/* <RefHook/> */}
       {/* <Demo/> */}
       {/* <h1>App</h1>
       <Functional name={'Anjali yadav'} data={obj} arr={ar}/>
