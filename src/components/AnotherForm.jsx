@@ -23,7 +23,7 @@ const AnotherForm = () => {
         // Reset form data after submission
         toast.success('Form submitted successfully!');
         setFormData({name: '', email: '', message: ''});
-        toast.error('Form submitted with error!',{});
+        // toast.error('Form submitted with error!',{});
     }
 
 

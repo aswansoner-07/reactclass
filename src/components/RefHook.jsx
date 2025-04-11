@@ -1,5 +1,7 @@
 import React,{useState} from 'react';
 
+// not useRef , it is counter 
+
 const RefHook = () => {
     const [num ,setNum]=useState(0);
     
