@@ -23,6 +23,8 @@ const RefForm = () => {
         <input className='border-2' type="email" name="email" id="email"  ref={emailRef} placeholder='enter email'/>
     
     <button className='border-2 p-2 bg-red-500 text-white' onClick={handleSubmit}>Submit</button>
+
+    <h1>{emailRef}</h1>
     
     </div>
   )
